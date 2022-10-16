@@ -1,0 +1,15 @@
+.note_creation{
+    margin: 10% auto;
+    width: 40%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;    
+}
+.note_creation label{
+    width: 100%;
+}
+.note_input{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(201, 201, 201);
+}

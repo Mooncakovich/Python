@@ -15,11 +15,16 @@
 
 <body>
     <section class="note_creation">
-    <h1>Add title of project here</h1>
-    <h4>Add description of project here</h4>
-    <h1>Links of parts of project</h1>
-    <h4><a href="checknotes">See your notes</a></h4>
-    <h4><a href="addnotes">Add some new notes</a></h4>
+        <form method="POST">
+            {% csrf_token %}
+            <h1>Create note</h1>
+            {{form.title}}
+            {{form.description}}
+            <button type="submit">Save</button>
+            <button><a href="checknotes">Check notes</a>
+                <a href="main">Main page</a></button>
+        </form>
+        
     </section>
 
     

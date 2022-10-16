@@ -15,11 +15,14 @@
 
 <body>
     <section class="note_creation">
-    <h1>Add title of project here</h1>
-    <h4>Add description of project here</h4>
-    <h1>Links of parts of project</h1>
-    <h4><a href="checknotes">See your notes</a></h4>
-    <h4><a href="addnotes">Add some new notes</a></h4>
+        {% for note in notes %}
+            <div>
+                <h1>{{ note.title }}</h1>
+                <h3>{{ note.description }}</h3>
+            </div>
+        {% endfor %}
+        <a href="addnotes">Add notes</a><br>
+        <a href="main">Main page</a>
     </section>
 
     
